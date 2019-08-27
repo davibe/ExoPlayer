@@ -343,6 +343,10 @@
     "name": "HLS",
     "samples": [
       {
+        "name": "HDRFREEZE",
+        "uri": "https://vod-ffwddevamsmediaservice.streaming.mediaservices.windows.net/f6dc0de2-ca7c-4a0d-84ad-a7462e731af5/a00e5583-21b0-4186-b3d5-10201617c050.ism/manifest(format=m3u8-cmaf).m3u8"
+      },
+      {
         "name": "Apple 4x3 basic stream",
         "uri": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8"
       },

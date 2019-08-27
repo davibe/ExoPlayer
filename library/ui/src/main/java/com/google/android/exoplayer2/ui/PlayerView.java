@@ -551,7 +551,14 @@ public class PlayerView extends FrameLayout {
         } else if (surfaceView instanceof SphericalSurfaceView) {
           ((SphericalSurfaceView) surfaceView).setVideoComponent(newVideoComponent);
         } else if (surfaceView instanceof SurfaceView) {
-          newVideoComponent.setVideoSurfaceView((SurfaceView) surfaceView);
+
+          postDelayed(new Runnable() {
+            @Override
+            public void run() {
+              newVideoComponent.setVideoSurfaceView((SurfaceView) surfaceView);
+            }
+          }, 10000);
+
         }
         newVideoComponent.addVideoListener(componentListener);
       }
