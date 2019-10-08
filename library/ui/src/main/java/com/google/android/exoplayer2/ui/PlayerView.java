@@ -552,14 +552,28 @@ public class PlayerView extends FrameLayout {
           ((SphericalSurfaceView) surfaceView).setVideoComponent(newVideoComponent);
         } else if (surfaceView instanceof SurfaceView) {
 
+          newVideoComponent.setVideoSurfaceView((SurfaceView) null);
+          newVideoComponent.setVideoSurfaceView((SurfaceView) surfaceView);
+
           postDelayed(new Runnable() {
             @Override
             public void run() {
+              newVideoComponent.setVideoSurfaceView((SurfaceView) null);
               newVideoComponent.setVideoSurfaceView((SurfaceView) surfaceView);
+
+
+              postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                  newVideoComponent.setVideoSurfaceView((SurfaceView) surfaceView);
+                }
+              }, 1);
+
             }
           }, 10000);
 
         }
+
         newVideoComponent.addVideoListener(componentListener);
       }
       Player.TextComponent newTextComponent = player.getTextComponent();

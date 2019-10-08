@@ -343,6 +343,10 @@
     "name": "HLS",
     "samples": [
       {
+        "name": "galaxy tab s2 freeze",
+        "uri": "https://vod-ffwddevamsmediaservice.streaming.mediaservices.windows.net/68479835-aa9b-4a32-a160-a96ddd8e6507/a3119dfd-7200-4544-ae1f-51867bee04ff.ism/manifest(format=m3u8-aapl).m3u8"
+      },
+      {
         "name": "HDRFREEZE",
         "uri": "https://vod-ffwddevamsmediaservice.streaming.mediaservices.windows.net/f6dc0de2-ca7c-4a0d-84ad-a7462e731af5/a00e5583-21b0-4186-b3d5-10201617c050.ism/manifest(format=m3u8-cmaf).m3u8"
       },
